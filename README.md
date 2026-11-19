@@ -3,6 +3,8 @@
 An agent team that analyses a supply chain disruption (supplier failure, shipment delay, demand surge),
 quantifies impact, finds alternative suppliers, optimises logistics and recommends a recovery strategy.
 
+🌐 Live Demo: https://chain-res-q.vercel.app/
+
 ## Problem
 Logistics companies face shipment delays, supplier failures and inventory shortages. Manual analysis is slow,
 so stock-outs and missed orders happen before a recovery plan exists.
