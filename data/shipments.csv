@@ -1,0 +1,8 @@
+shipment_id,supplier_id,product,qty,origin,destination,mode,eta_days,status,cost
+SH101,S03,Electronic Components,10000,Guangdong,Karachi,Sea,14,In Transit,9000
+SH102,S03,Electronic Components,6000,Guangdong,Lahore,Sea,10,In Transit,5400
+SH103,S05,Battery Packs,3000,Hanoi,Karachi,Sea,16,In Transit,48000
+SH104,S05,Battery Packs,2000,Hanoi,Lahore,Sea,20,In Transit,32000
+SH105,S09,Steel Parts,4000,Sialkot,Karachi,Road,3,In Transit,30000
+SH106,S12,Sensors,5000,Shenzhen,Karachi,Air,6,In Transit,39000
+SH107,S07,Packaging,30000,Karachi,Karachi,Road,1,Delivered,27000

@@ -1,0 +1,8 @@
+sku,product,warehouse,on_hand,daily_demand,reorder_point,primary_supplier_id
+SKU-EC-01,Electronic Components,Karachi,6000,400,3000,S03
+SKU-EC-01,Electronic Components,Lahore,9000,250,2500,S03
+SKU-BP-01,Battery Packs,Karachi,1200,150,900,S05
+SKU-BP-01,Battery Packs,Lahore,800,90,500,S05
+SKU-PK-01,Packaging,Karachi,40000,2500,15000,S07
+SKU-ST-01,Steel Parts,Karachi,5000,300,2500,S09
+SKU-SN-01,Sensors,Karachi,1500,200,1000,S12

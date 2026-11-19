@@ -1,0 +1,14 @@
+order_id,customer,product,qty,due_in_days,priority
+O-1001,Daraz Electronics,Electronic Components,5000,10,High
+O-1002,Hospital Supplies Ltd,Electronic Components,3000,20,High
+O-1003,TechMart,Electronic Components,4000,28,Medium
+O-1004,GadgetHub,Electronic Components,6000,35,Low
+O-1005,SolarPK,Battery Packs,1500,12,High
+O-1006,EV Motors,Battery Packs,2500,25,High
+O-1007,PowerBank Co,Battery Packs,2000,32,Medium
+O-1008,RetailOne,Packaging,20000,10,Low
+O-1009,AutoParts Inc,Steel Parts,2500,14,Medium
+O-1010,BuildRight,Steel Parts,3000,30,Low
+O-1011,SmartHome PK,Sensors,2500,15,High
+O-1012,AgriTech,Sensors,3000,26,Medium
+O-1013,CityLabs,Sensors,2000,34,Low

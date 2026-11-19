@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChainResQ - Crisis control for supply chains</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+
+  <aside class="rail">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+        <rect x="2" y="17" width="12" height="8" fill="#E8A200"/><rect x="16" y="17" width="12" height="8" fill="#9FB6BE"/>
+        <rect x="9" y="8" width="12" height="8" fill="#fff"/><rect x="2" y="27" width="26" height="2" fill="#9FB6BE"/>
+      </svg>
+      <div><strong>ChainResQ</strong><span>Crisis control</span></div>
+    </div>
+
+    <nav class="tabs" aria-label="Views">
+      <button class="tab is-active" data-view="incident">Incident room</button>
+      <button class="tab" data-view="data">Network data</button>
+    </nav>
+
+    <h2 class="rail-title">Incident queue</h2>
+    <ul id="queue" class="queue"></ul>
+
+    <div class="rail-foot"><span id="apiDot" class="dot"></span><span id="apiText">Checking API</span></div>
+  </aside>
+
+  <main>
+    <!-- ================= Incident room ================= -->
+    <section id="view-incident">
+      <header class="head">
+        <div>
+          <h1 id="incTitle">Select an incident</h1>
+          <p id="incSub" class="muted"></p>
+        </div>
+        <div class="head-actions">
+          <button id="run" class="btn-primary">Run analysis</button>
+        </div>
+      </header>
+
+      <ol id="pipeline" class="pipeline" aria-label="Agent pipeline"></ol>
+
+      <div id="notice"></div>
+
+      <div id="empty" class="empty">
+        <h2>No analysis yet</h2>
+        <p>Pick an incident from the queue and run the analysis. Six agents will assess the damage, find backup suppliers, reroute shipments and compare recovery plans.</p>
+      </div>
+
+      <div id="results" hidden>
+        <section class="reco" id="reco"></section>
+
+        <section class="kpis" id="kpis" aria-label="Impact summary"></section>
+
+        <div class="split">
+          <section class="block">
+            <h2>Supply against demand, next 30 days</h2>
+            <div id="chart" class="chart"></div>
+            <ul class="legend" id="legend"></ul>
+          </section>
+          <section class="block">
+            <h2>Orders at risk</h2>
+            <div id="orders"></div>
+          </section>
+        </div>
+
+        <section class="block">
+          <h2>Recovery strategies</h2>
+          <p class="muted small">Select a row to see its actions.</p>
+          <div id="strategies" class="table-wrap"></div>
+        </section>
+
+        <div class="split">
+          <section class="block">
+            <div class="block-head"><h2>Action plan</h2>
+              <div><button class="btn-ghost" id="copy">Copy</button><button class="btn-ghost" id="download">Download .txt</button></div>
+            </div>
+            <pre id="report" class="report"></pre>
+          </section>
+          <section class="block">
+            <h2>Agent log</h2>
+            <ul id="trace" class="trace"></ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Network data ================= -->
+    <section id="view-data" hidden>
+      <header class="head">
+        <div><h1>Network data</h1><p class="muted">The datasets the agents read from. Replace the CSV files in /data to analyse your own network.</p></div>
+      </header>
+      <div class="subtabs" id="dataTabs"></div>
+      <div id="dataTable" class="table-wrap"></div>
+    </section>
+  </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
